@@ -114,5 +114,5 @@ av_tidy_ds <- tidy_ds %>%
         arrange(Subject)
 
 # Export and save the new tyidy data set in the local folder :        
-write.table(tidy_ds, file = "tidy_ds.txt")
-write.table(av_tidy_ds, file = "av_tidy_ds.txt")
+write.table(tidy_ds, file = "tidy_ds.txt", row.name=FALSE)
+write.table(av_tidy_ds, file = "av_tidy_ds.txt", row.name=FALSE)
